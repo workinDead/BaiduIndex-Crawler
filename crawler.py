@@ -20,7 +20,9 @@ from pyocr import tesseract
 
 
 chrome_path = r"C:\Users\X240\Desktop\chromedriver.exe"
-option_path = r'C:\Users\X240\AppData\Local\Temp\scoped_dir9624_1152'# 获取用户设置数据地址 #chrome://version/ 
+option_path = r'C:\Users\X240\AppData\Local\Temp\scoped_dir9624_1152'
+# 获取用户设置数据地址 请根据自身的用户数据地址更改本地址 #chrome://version/ 
+# 若不愿查找地址，可解锁模拟登陆注释
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('enable-automation')
 chrome_options.add_argument('--user-data-dir='+os.path.abspath(option_path))
@@ -44,8 +46,8 @@ driver.get(url)
 #passFieldElement = WebDriverWait(driver,10).until(lambda driver : driver.find_element_by_xpath("""//*[@id="TANGRAM_12__password"]"""))
 
 #输入用户名和密码
-#userName = "294078290@qq.com"
-#password = "lanhou199681"
+#userName = "请输入用户名"
+#password = "请输入密码"
 
 #模拟登陆
 #emailFieldElement.clear()
